@@ -3,8 +3,8 @@
 
 # Rutas usuario
 
-POST: /acopioenbici/api/v1/usuario/registro\n
-POST: /acopioenbici/api/v1/usuario/login
-GET: /acopioenbici/api/v1/usuario/:idUsuario
-POST: /acopioenbici/api/v1/usuario/subirImagen/:idUsuario
-GET: /acopioenbici/api/v1/usuario/obtenerImagen/:imagen
+POST: /acopioenbici/api/v1/usuario/registro <br/>
+POST: /acopioenbici/api/v1/usuario/login <br/>
+GET: /acopioenbici/api/v1/usuario/:idUsuario <br/>
+POST: /acopioenbici/api/v1/usuario/subirImagen/:idUsuario <br/>
+GET: /acopioenbici/api/v1/usuario/obtenerImagen/:imagen <br/>
