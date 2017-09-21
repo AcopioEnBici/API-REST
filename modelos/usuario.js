@@ -12,5 +12,12 @@ var UsuarioSchema = Schema({
   privilegio: String
 });
 
+/**
+	Roles de usuario
+
+	ROL_USUARIO -- POR DEFECTO
+	ROL_ADMIN
+	ROL_MENSAJERO
+**/
 
 module.exports = mongoose.model('Usuario', UsuarioSchema);

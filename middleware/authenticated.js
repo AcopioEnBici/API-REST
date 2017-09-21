@@ -2,7 +2,8 @@
 
 var jwt = require('jwt-simple');
 var moment = require('moment');
-var secret = 'AcopioEnBiciFraseSecreta';
+var env = require('../env.json');
+var secret = env.API.SECRETKEY;
 
 function ensureAuth(req, res, next){
 
@@ -38,7 +39,7 @@ function esAdmin(req, res, next){
 
   let privilegio = req.usuario.privilegio;
 
-  if(privilegio === "ADMIN"){
+  if(privilegio === "ROL_ADMIN"){
     next();
   }else{
     return res.status(403).send({
